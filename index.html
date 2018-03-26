@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>cotiza el seguro de tu auto</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="header">Cotiza tu seguro de auto</h1>
+        <form action="#" id="formulario">
+            <label for="marca">Marca</label>
+            <select name="marca" id="marca">
+                <option value="" selected>--Seleccionar--</option>
+                <option value="1">Toyota</option>
+                <option value="2">Hiunday</option>
+                <option value="3">Nissan</option>
+            </select>
+
+            <label for="anio">Año</label>
+            <select name="anio" id="anio"></select>
+
+            <label>Tipo de seguro</label>
+            <div class="btn-radio">
+                <p><input type="radio" value="basico" name="tipo" checked> Básico</p>
+                <p>
+                    <input type="radio" value="completo" name="tipo"> Completo
+                </p>
+            </div>
+
+            <div class="cargando" id="cargando">
+                <img src="./spinnerAzul.gif" alt="spinner">
+            </div>
+
+            <div id="resultado" class="resultado">
+            </div>
+
+            <input id="btn-submit" type="submit" value="Cotizar">
+        </form>
+    </div>
+
+    <script src="./appEs6.js"></script>
+</body>
+
+</html>
